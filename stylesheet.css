@@ -129,3 +129,160 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* CSS Variables for consistent styling */
+:root {
+  --primary-color: #1772d0;
+  --hover-color: #f09228;
+  --text-color: #000000;
+  --background-color: #ffffff;
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 40px;
+  --font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+/* Layout Classes */
+.container {
+  width: 100%;
+  max-width: 800px;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content-section {
+  width: 100%;
+  border: 0px;
+  border-spacing: 0px;
+  border-collapse: separate;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.profile-container {
+  padding: 2.5%;
+  width: 63%;
+  vertical-align: middle;
+}
+
+.profile-image-container {
+  padding: 2.5%;
+  width: 40%;
+  max-width: 40%;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-container {
+  padding: var(--spacing-medium);
+  width: 100%;
+  vertical-align: middle;
+}
+
+.publication-image-container {
+  padding: var(--spacing-medium);
+  width: 25%;
+  vertical-align: middle;
+}
+
+.publication-content {
+  width: 75%;
+  vertical-align: middle;
+}
+
+/* Typography */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+strong {
+  font-family: var(--font-family);
+  font-size: 14px;
+}
+
+heading {
+  font-family: var(--font-family);
+  font-size: 22px;
+}
+
+papertitle {
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+name {
+  font-family: var(--font-family);
+  font-size: 32px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Image hover effect */
+.one {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.two {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container, .profile-image-container {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+  }
+  
+  .publication-image-container, .publication-content {
+    width: 100%;
+    display: block;
+  }
+  
+  name {
+    font-size: 24px;
+  }
+  
+  heading {
+    font-size: 18px;
+  }
+}
