@@ -4,6 +4,43 @@ body {
     align-items: center;
     font-family: sans-serif;
     background-color: #f0f0f0;
+    color: #333;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#lobby-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#status-message {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.join-controls input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+.join-controls button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+#assignment-info {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 #game-container {
@@ -28,6 +65,11 @@ body {
     max-width: 400px;
     max-height: 400px;
     border: 2px solid #333;
+    transition: box-shadow 0.3s;
+}
+
+.chessboard.active-turn {
+    box-shadow: 0 0 15px 5px #ffdf7e; /* A golden glow for the active board */
 }
 
 .square {
